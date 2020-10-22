@@ -16,6 +16,8 @@ public class LowestCommonAncestorTest {
 		tree.root.right.right = new Node(7); 
         assertEquals("Testing LCA(4, 5)", 2, tree.findLCA(4,5));
         assertEquals("Testing LCA(4, 6)", 1, tree.findLCA(4,6));
+        assertEquals("Testing LCA(4, 6)", 1, tree.findLCA(3,4));
+        assertEquals("Testing LCA(4, 6)", 2, tree.findLCA(2,4));
         assertEquals("Testing LCA(4, 9)", -1, tree.findLCA(4,9));
         assertEquals("Testing LCA(-1, 2)", -1, tree.findLCA(-1,2));
 		tree.root = null; 
